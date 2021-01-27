@@ -1,0 +1,17 @@
+$background-header: #FFFFFF;
+$background-menu: #0000EC;
+$color-text-page: #060A24;
+$color-text-page-reverse: #FFFFFF;
+$color-links: #000000;
+$font-family-titles: 'IBM Plex Sans', sans-serif;
+$font-family-content: 'IBM Plex Mono', monospace;
+$hover-menu-backButton: #00F3BB;
+$active-menu: rgba(6, 10, 36, 0.56);
+$start-color-button: #0000FE;
+$finish-color-button: #00F0B8;
+$hover-button: linear-gradient(225deg, $start-color-button 0%, $finish-color-button 100%);
+$start-color-back: #0000FF;
+$finish-color-back: #0000A3;
+$background-page: linear-gradient(225deg, $start-color-back 0%, $finish-color-back 100%);
+$back-skew-mobile: skew(0, -6deg);
+$back-skew-desktop: skew(0, -5deg);

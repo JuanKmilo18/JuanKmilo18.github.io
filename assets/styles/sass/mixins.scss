@@ -1,0 +1,32 @@
+@mixin titles ($color:$color-text-page, $size: 36px, $lineH: 42px) {
+  font-family: $font-family-titles;
+  font-size: $size;
+  line-height: $lineH;
+  font-weight: 400;
+  color: $color;
+}
+@mixin description ($size: 14px, $lineH: 22px) {
+  font-family: $font-family-content;
+  font-size: $size;
+  line-height: $lineH;
+  letter-spacing: 0px;
+  font-weight: 400;
+  color: $color-text-page;
+}
+
+@mixin button ($width: 288px, $height: 48px, $size: 16px, $lineH: 22px) {
+  width: $width;
+  height: $height;
+  font-size: $size;
+  line-height: $lineH;
+  font-family: $font-family-content;
+  font-weight: 500;
+  color: $color-text-page;
+  background: $hover-menu-backButton;
+  border: 0;
+  text-align: center;
+  &:hover {
+    background: $hover-button;
+    cursor: pointer;
+  }
+}

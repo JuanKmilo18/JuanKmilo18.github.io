@@ -1,0 +1,229 @@
+@import './variables.scss';
+
+@media (min-width: 1024px) {
+
+  .header {
+    height: 80px;
+    padding: 22px 70px;
+    position: relative;
+    .logo-page {
+      width: 28px;
+      height: 28px;
+    }
+    .menu-list {
+      #menu-input {
+        display: none;
+      }
+      .menu-label {
+        display: none;
+      }
+      .menu-options {
+        display: flex;
+        position: relative;
+        left: auto;
+        top: auto;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        .menu-option {
+          color: $color-text-page;
+          padding-bottom: 0;
+          padding: 4px 24px;
+          &:last-child {
+            padding-right: 0;
+          }
+          &:active {
+            color: $active-menu;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+
+  .initial-section {
+    .title {
+      .dot {
+        color: $background-menu;
+      }
+      br {
+        display: none;
+      }
+    }
+    .description {
+      display: none;
+      &-desktop {
+        display: block;
+      }
+    }
+  }
+
+  .episodes {
+    padding-top: 5%;
+  }
+
+  .guests {
+    .imgs-gallery {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .img {
+        width: 33.3%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .header {
+    height: 80px;
+    padding: 22px 100px;
+    position: relative;
+    .logo-page {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .initial-section {
+    padding: 120px 500px 70px 200px;
+    .title {
+      font-size: 64px;
+      line-height: 64px;
+      font-weight: 400;
+      padding-bottom: 5px;
+    }
+    .general-btn {
+      @include button (226px, 56px, 18px, 24px);
+      padding: 16px 59px;
+    }
+  }
+
+  .background-blue {
+    &::after {
+      transform: $back-skew-desktop;
+    }
+  }
+  .episodes {
+    padding:  100px 100px 180px;
+    .subtitle {
+      @include titles ($color-text-page-reverse, 48px, 48px);
+      padding-left: 100px;
+      padding-bottom: 26px;
+    }
+    .podcast {
+      width: 1240px;
+      height: 536px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 72px;
+    }
+  }
+
+  .about-us {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0 256px 64px 200px;
+    margin-top: -105px;
+    .img-container {
+      margin: 0;
+    }
+    .text-container {
+      padding-left: 62.4px;
+      .subtitle {
+        @include titles ($color-text-page, 48px, 48px);
+        padding: 0 0 24px;
+      }
+      .paragraphs {
+        max-width: 464px;
+        padding: 0;
+        .paragraph {
+          @include description (16px, 24px);
+        }
+      }
+    }
+  }
+
+  .guests {
+    .subtitle {
+      @include titles ($color-text-page, 48px, 48px);
+      padding-top: 0;
+      padding-left: 200px;
+      padding-bottom: 36px;
+    }
+  }
+
+  .topics {
+    .subtitle {
+      @include titles ($color-text-page, 48px, 48px);
+      padding: 64px 654px 56px 200px;
+    }
+    .topics-grid {
+      display: flex;
+      grid-template-rows: 0;
+      gap: 0;
+      flex-direction: row;
+      width: 100%;
+      padding: 0 200px 34px;
+      .topic {
+        display: inline-block;
+        width: 260px;
+        .icon {
+          display: block;
+          padding: 13px 78px 29px;
+        }
+        .text-icon {
+          display: block;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  .last-section {
+    height: 518px;
+    margin-top: 0;
+    .background-grl {
+      transform: $back-skew-desktop;
+    }
+    .last-container {
+      padding-top: 213px;
+      padding-bottom: 151px;
+      .last-subtitle {
+        @include titles ($color-text-page-reverse, 48px, 48px);
+      }
+      .general-btn {
+        @include button (345px, 56px, 18px, 24px);
+        padding: 16px 59px;
+      }
+    }
+  }
+
+  .footer {
+    height: 95px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 100px 31px;
+    .copy-right {
+      max-width: 269px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .icons-apps {
+      margin-top: 0;
+      width: 234px;
+      .links {
+        .app {
+          width: 18px;
+          padding-top: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@media (min-width: 425px) {
+  .about-us .text-container .subtitle br {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .initial-section {
+    padding: 29px 50px 40px;
+  }
+
+  .episodes .subtitle {
+    padding-left: 50px;
+  }
+  .episodes .podcast {
+    margin: 0 auto;
+    width: 90%;
+    height: 536px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px 32px;
+  }
+
+  .about-us {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .about-us .text-container {
+    padding: 0;
+  }
+  .about-us .text-container .paragraphs {
+    max-width: 400px;
+    padding: 0;
+  }
+
+  .guests .subtitle {
+    padding-left: 50px;
+  }
+  .guests .imgs-gallery {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .guests .imgs-gallery .img {
+    width: 50%;
+  }
+
+  .topics .subtitle {
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+  .topics .topics-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 194px 162px;
+    gap: 50px 0;
+  }
+
+  .last-section .last-container {
+    padding-top: 90px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

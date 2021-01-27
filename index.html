@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Channel</title>
+  <link rel="stylesheet" href="./assets/styles/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-page">
+      <img src="./assets/images/logo.svg" alt="page-logo" class="logo">
+    </div>
+    <div class="menu-list">
+      <input type="checkbox" id="menu-input">
+      <label for="menu-input" class="menu-label">
+        <i class="fas fa-bars bars"></i>
+        <i class="fas fa-times closed"></i>
+      </label>
+      <div class="menu-options">
+        <a href="#episodes" class="menu-option">
+          episodios
+        </a>
+        <a href="#about-us" class="menu-option">
+          nosotros
+        </a>
+        <a href="#guests" class="menu-option">
+          entrevistas
+        </a>
+        <a href="#topics" class="menu-option">
+          tópicos
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="initial-section">
+    <h1 class="title">
+      Hello <del>world</del> <br> pale blue dot<a href="https://podcasts.google.com/" class="dot">.</a>
+    </h1>
+    <p class="description">
+      Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+    </p>
+    <p class="description-desktop">
+      El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+    </p>
+    <button class="general-btn">
+        conocé más
+    </button>
+  </section>
+  <section class="episodes background-blue" id="episodes">
+    <h2 class="subtitle">Episodios</h2>
+    <div class="podcast">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" class="playlist" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" class="playlist" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" class="playlist" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" class="playlist" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </section>
+  <section class="about-us" id="about-us">
+    <div class="img-container">
+      <img src="./assets/images/phone.png" alt="Women coding" class="img-phone">
+    </div>
+    <div class="text-container">
+      <h2 class="subtitle">De dónde <br> venimos</h2>
+      <div class="paragraphs">
+        <p class="paragraph">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+        <p class="paragraph">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+      </div>
+    </div>
+  </section>
+  <section class="guests" id="guests">
+    <h2 class="subtitle">Invitadas/os estelares</h2>
+    <div class="imgs-gallery">
+      <img src="./assets/images/grace-hopper.png" alt="Grace Hopper" class="img">
+      <img src="./assets/images/Katie-Bouman.png" alt="Katie Bouman" class="img">
+      <img src="./assets/images/Margaret_Hamilton.png" alt="Margaret Hamilton" class="img">
+      <img src="./assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="E.R.A.Univac 1103" class="img">
+      <img src="./assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Operadoras de computación" class="img">
+      <img src="./assets/images/susan-kare.png" alt="Susan Kare" class="img">
+    </div>
+  </section>
+  <section class="topics" id="topics">
+    <h2 class="subtitle">Algunos de nuestros temas</h2>
+    <div class="topics-grid">
+      <a class="topic" href="https://www.spotify.com/co/">
+        <img src="./assets/images/icon1.svg" alt="Trabajo remoto" class="icon">
+        <div class="text-icon">Trabajo remoto</div>
+      </a>
+      <a class="topic" href="#">
+        <img src="./assets/images/icon2.svg" alt="Repensando la programación" class="icon">
+        <div class="text-icon">Repensando la <br> programación</div>
+      </a>
+      <a class="topic" href="#">
+        <img src="./assets/images/icon3.svg" alt="Bases del código" class="icon">
+        <div class="text-icon">Bases del código</div>
+      </a>
+      <a class="topic" href="#">
+        <img src="./assets/images/icon4.svg" alt="Seguridad informática" class="icon">
+        <div class="text-icon">Seguridad informática</div>
+      </a>
+    </div>
+  </section>
+  <section class="last-section">
+    <div class="background-grl"></div>
+    <div class="last-container">
+      <h3 class="last-subtitle">¿Querés las últimas novedades?</h3>
+      <button class="general-btn">ESCUCHÁ LOS EPISODIOS</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <span class="copy-right">© 2019— Hello blue pale dot</span>
+    <div class="icons-apps">
+      <a href="https://www.spotify.com/co/" class="links">
+        <i class="fab fa-spotify app spotify"></i>
+      </a>
+      <a href="https://www.instagram.com/?hl=es-la" class="links">
+        <i class="fab fa-instagram app instagram"></i>
+      </a>
+      <a href="https://twitter.com/" class="links">
+        <i class="fab fa-twitter app twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/" class="links">
+        <i class="fab fa-facebook app facebook"></i>
+      </a>
+      <a href="https://web.telegram.org/#/login" class="links">
+        <i class="fab fa-telegram app telegram"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
